@@ -1,16 +1,22 @@
 # dotfiles
 
-Install dependencies:
-```
-brew install zsh zsh-completions git vim fzf
-chsh -s /bin/zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
 Clone:
 
 ```
+brew install git
 git clone git@github.com:idanyman/dotfiles.git
+```
+
+Install dependencies from Brewfile:
+
+```
+brew bundle
+```
+
+Install oh-my-zsh and set zsh as default shell
+```
+chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 Create symlinks:

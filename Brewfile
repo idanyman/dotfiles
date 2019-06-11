@@ -1,0 +1,16 @@
+tap "caskroom/cask"
+tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "fzf"
+brew "tmux"
+brew "zsh"
+brew "zsh-autosuggestions"
+
+cask "google-chrome"
+cask "iterm2"
+cask "slack"
+cask "spotify"
+cask "visual-studio-code"
