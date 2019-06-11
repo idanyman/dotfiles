@@ -52,7 +52,8 @@
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
-    "vim.statusBarColors.insert": "#00a1a1",
+    "vim.statusBarColors.insert": "#007474",
+    "vim.statusBarColors.normal": "#415566",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
     "vim.statusBarColorControl": true
