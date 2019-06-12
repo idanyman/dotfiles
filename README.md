@@ -24,6 +24,8 @@ Create symlinks:
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/vscode/settings.json /Users/ida.nyman/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/vscode/keybindings.json /Users/ida.nyman/Library/Application\ Support/Code/User/keybindings.json
 ```
 
 Install vim plug:
