@@ -48,13 +48,16 @@
     "vim.easymotionMarkerYOffset": 1,
     "vim.easymotionMarkerForegroundColorTwoChar": "white",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#415566",
+        "statusBar.noFolderBackground": "#415566",
+        "statusBar.debuggingBackground": "#415566"
     },
     "vim.statusBarColors.insert": "#007474",
     "vim.statusBarColors.normal": "#415566",
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
-    "vim.statusBarColorControl": true
+    "vim.statusBarColorControl": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
