@@ -16,16 +16,21 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-alias dc="docker-compose"
 alias editrc="vim ~/.zshrc"
+alias sourcerc="source ~/.zshrc"
+## Git
 alias gad="git add"
-alias gcb="git checkout -b"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gs="git status"
+alias master="gco master && ggpull && git fetch -p"
+## Docker
+alias dc="docker-compose"
 alias rma_containers="docker rm -f $(docker ps -a -q)"
 alias rma_images="docker rmi -f $(docker images -q)"
-alias sourcerc="source ~/.zshrc"
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
