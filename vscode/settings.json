@@ -1,6 +1,7 @@
 {
     "[javascript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "breadcrumbs.enabled": true,
     "dateTime.showDayOfMonth": true,
@@ -10,6 +11,7 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
     "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": false,
     "editor.wordWrap": "on",
     "eslint.autoFixOnSave": true,
     "eslint.packageManager": "yarn",
@@ -59,5 +61,11 @@
     "vim.statusBarColorControl": true,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
 }
