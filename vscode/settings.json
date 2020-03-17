@@ -50,9 +50,9 @@
     "vim.easymotionMarkerYOffset": 1,
     "vim.easymotionMarkerForegroundColorTwoChar": "white",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#415566",
-        "statusBar.noFolderBackground": "#415566",
-        "statusBar.debuggingBackground": "#415566"
+        "statusBar.background": "#007474",
+        "statusBar.noFolderBackground": "#007474",
+        "statusBar.debuggingBackground": "#007474"
     },
     "vim.statusBarColors.insert": "#007474",
     "vim.statusBarColors.normal": "#415566",

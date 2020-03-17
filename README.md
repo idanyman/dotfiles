@@ -1,5 +1,11 @@
 # dotfiles
 
+### Fix smooth font on external monitor
+[Reference](http://hints.macworld.com/article.php?story=20090828224632809)
+```
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
+```
+
 ### Clone:
 
 ```
