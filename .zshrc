@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias editrc="vim ~/.zshrc"
 alias sourcerc="source ~/.zshrc"
+alias dc="docker-compose"
 ## Git
 alias gad="git add"
 alias gcm="git commit -m"

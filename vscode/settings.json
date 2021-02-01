@@ -1,71 +1,85 @@
 {
-    "[javascript]": {
-        "editor.formatOnSave": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "breadcrumbs.enabled": true,
-    "dateTime.showDayOfMonth": true,
-    "dateTime.showDayOfWeek": true,
-    "dateTime.showMonth": true,
-    "editor.fontFamily": "FiraCode-Retina, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.minimap.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.wordWrap": "on",
-    "eslint.autoFixOnSave": true,
-    "eslint.packageManager": "yarn",
-    "explorer.autoReveal": false,
-    "extensions.ignoreRecommendations": false,
-    "files.trimTrailingWhitespace": true,
-    "files.associations": {
-        "*.twig": "html",
-        "*.tmpl": "html"
-    },
-    "html.autoClosingTags": false,
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "ruby.intellisense": "rubyLocate",
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "FiraCode-Retina",
-    "terminal.integrated.fontSize": 12,
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "vim.easymotion": true,
-    "vim.easymotionMarkerBackgroundColor": "black",
-    "vim.easymotionMarkerFontFamily": "FiraCode-Retina",
-    "vim.easymotionMarkerForegroundColorOneChar": "red",
-    "vim.leader": "<space>",
-    "vim.useSystemClipboard": true,
-    "window.title": "${rootName} | ${activeEditorMedium}",
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Nord",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.tree.indent": 12,
-    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjfåäö;",
-    "vim.easymotionMarkerFontSize": "12",
-    "vim.easymotionMarkerHeight": 17,
-    "vim.easymotionMarkerYOffset": 1,
-    "vim.easymotionMarkerForegroundColorTwoChar": "white",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#007474",
-        "statusBar.noFolderBackground": "#007474",
-        "statusBar.debuggingBackground": "#007474"
-    },
-    "vim.statusBarColors.insert": "#007474",
-    "vim.statusBarColors.normal": "#415566",
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
-    "vim.statusBarColorControl": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": true,
+  "dateTime.showDayOfMonth": true,
+  "dateTime.showDayOfWeek": true,
+  "dateTime.showMonth": true,
+  "editor.fontFamily": "FiraCode-Retina, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.wordWrap": "on",
+  "eslint.packageManager": "yarn",
+  "explorer.autoReveal": false,
+  "extensions.ignoreRecommendations": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.twig": "html",
+    "*.tmpl": "html"
+  },
+  "html.autoClosingTags": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "ruby.intellisense": "rubyLocate",
+  "ruby.linter.run": "onSave",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "FiraCode-Retina",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "black",
+  "vim.easymotionMarkerForegroundColorOneChar": "red",
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "window.title": "${rootName} | ${activeEditorMedium}",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Nord",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.indent": 12,
+  "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjfåäö;",
+  "vim.easymotionMarkerHeight": 17,
+  "vim.easymotionMarkerYOffset": 1,
+  "vim.easymotionMarkerForegroundColorTwoChar": "white",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#415566",
+    "statusBar.noFolderBackground": "#415566",
+    "statusBar.debuggingBackground": "#415566"
+  },
+  "vim.statusBarColors.insert": "#007474",
+  "vim.statusBarColors.normal": "#415566",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
+  "vim.statusBarColorControl": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptvue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascriptvue": "javascript"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "ruby.codeCompletion": "rcodetools",
+  "settingsSync.keybindingsPerPlatform": false,
+  "settingsSync.ignoredExtensions": [
+
+  ],
+  "window.enableExperimentalProxyLoginDialog": false
 }
