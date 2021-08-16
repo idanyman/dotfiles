@@ -11,7 +11,10 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="cloud"
 
-plugins=(git)
+plugins=(
+  git
+  thefuck
+)
 
 source $ZSH/oh-my-zsh.sh
 
