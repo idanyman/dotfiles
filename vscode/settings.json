@@ -25,7 +25,10 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "ruby.intellisense": "rubyLocate",
-  "ruby.linter.run": "onSave",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.useLanguageServer": true,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "FiraCode-Retina",
   "terminal.integrated.fontSize": 12,
@@ -58,7 +61,7 @@
   "vim.statusBarColorControl": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -89,5 +92,12 @@
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
