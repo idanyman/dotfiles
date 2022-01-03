@@ -32,7 +32,6 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "FiraCode-Retina",
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "black",
@@ -46,8 +45,6 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.tree.indent": 12,
   "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjfåäö;",
-  "vim.easymotionMarkerHeight": 17,
-  "vim.easymotionMarkerYOffset": 1,
   "vim.easymotionMarkerForegroundColorTwoChar": "white",
   "workbench.colorCustomizations": {
     "statusBar.background": "#415566",
@@ -84,7 +81,6 @@
   "settingsSync.ignoredExtensions": [
 
   ],
-  "window.enableExperimentalProxyLoginDialog": false,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
@@ -99,5 +95,39 @@
   "explorer.confirmDragAndDrop": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "cSpell.userWords": [
+    "AWSX",
+    "billpay",
+    "chargeback",
+    "closability",
+    "contexual",
+    "discordia",
+    "DISP",
+    "freshdesk",
+    "ghostbuster",
+    "Instrumenter",
+    "Klarna",
+    "klarnas",
+    "Klear",
+    "kred",
+    "Krns",
+    "loadbalancer",
+    "mappersmith",
+    "Middlewares",
+    "NOREPLY",
+    "openapi",
+    "osascript",
+    "osis",
+    "prefill",
+    "preload",
+    "railtie",
+    "sasl",
+    "sendout",
+    "sendouts",
+    "serializers"
+  ],
+  "cSpell.enableFiletypes": [
+    "ruby"
+  ]
 }
