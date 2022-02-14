@@ -46,6 +46,8 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/vscode/settings.json /Users/ida.nyman/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dotfiles/vscode/keybindings.json /Users/ida.nyman/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/.config/nvim/* ~/.config/nvim/
+ln -s ~/dotfiles/.config/kitty ~/.config/
 ```
 
 ### Install VS Code extensions
