@@ -32,6 +32,8 @@ alias master="gco master && ggpull && git fetch -p"
 alias dc="docker-compose"
 alias rma_containers="docker rm -f $(docker ps -a -q)"
 alias rma_images="docker rmi -f $(docker images -q)"
+# Vim
+alias vim="neovide --multigrid"
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
