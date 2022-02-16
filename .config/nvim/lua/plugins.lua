@@ -28,6 +28,7 @@ Plug 'TimUntersberger/neogit'
 vim.call('plug#end')
 
 -- Plugin specific configuration
+require('plugins.bufferline')
 require('plugins.git')
 require('plugins.lsp')
 require('plugins.lualine')
