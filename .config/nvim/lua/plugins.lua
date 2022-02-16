@@ -25,10 +25,13 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'TimUntersberger/neogit'
+
+Plug 'numToStr/FTerm.nvim'
 vim.call('plug#end')
 
 -- Plugin specific configuration
 require('plugins.bufferline')
+require('plugins.fterm')
 require('plugins.git')
 require('plugins.lsp')
 require('plugins.lualine')
