@@ -18,8 +18,7 @@ nvimtree.setup {
     ignore = false,
   },
   view = {
-    width = 30,
-    hide_root_folder = true
+    width = 30
   }
 }
 
