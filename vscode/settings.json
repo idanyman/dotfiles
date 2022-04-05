@@ -3,11 +3,12 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.bracketPairColorization.enabled": true,
   "breadcrumbs.enabled": true,
   "dateTime.showDayOfMonth": true,
   "dateTime.showDayOfWeek": true,
   "dateTime.showMonth": true,
-  "editor.fontFamily": "FiraCode-Retina, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
+  "editor.fontFamily": "FiraCode Nerd Font, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.minimap.enabled": false,
@@ -29,8 +30,8 @@
     "rubocop": true
   },
   "ruby.useLanguageServer": true,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontFamily": "FiraCode-Retina",
+  "terminal.external.osxExec": "kitty.app",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "vim.easymotion": true,
@@ -94,12 +95,14 @@
   },
   "explorer.confirmDragAndDrop": false,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "cSpell.userWords": [
     "AWSX",
     "billpay",
     "chargeback",
+    "cidpno",
     "closability",
     "contexual",
     "discordia",
@@ -107,6 +110,7 @@
     "freshdesk",
     "ghostbuster",
     "Instrumenter",
+    "klapp",
     "Klarna",
     "klarnas",
     "Klear",
@@ -117,17 +121,22 @@
     "Middlewares",
     "NOREPLY",
     "openapi",
+    "Optin",
     "osascript",
     "osis",
     "prefill",
     "preload",
     "railtie",
+    "redispute",
     "sasl",
     "sendout",
     "sendouts",
-    "serializers"
+    "serializers",
+    "Untruncated"
   ],
   "cSpell.enableFiletypes": [
     "ruby"
-  ]
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "cSpell.enabled": false
 }
