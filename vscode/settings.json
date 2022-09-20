@@ -10,7 +10,6 @@
   "dateTime.showMonth": true,
   "editor.fontFamily": "FiraCode Nerd Font, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.wordWrap": "off",
@@ -138,5 +137,6 @@
     "ruby"
   ],
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.enabled": false
 }
