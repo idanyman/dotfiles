@@ -41,6 +41,11 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+### Install powerlevel10k zsh theme
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
 ### Install kitty
 ```
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
@@ -50,6 +55,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/dotfiles/vscode/settings.json /Users/inyman/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dotfiles/vscode/keybindings.json /Users/inyman/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/dotfiles/.config/nvim ~/.config/
