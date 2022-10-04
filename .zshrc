@@ -26,7 +26,7 @@ alias sourcerc="source ~/.zshrc"
 alias gad="git add"
 alias gcm="git commit -m"
 alias gco="git checkout"
-alias gs="git status -uno"
+alias gs="git status -u"
 alias master="gco master && ggpull && git fetch -p"
 ## Docker
 #alias dc="docker-compose"
