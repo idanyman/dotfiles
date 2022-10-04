@@ -18,7 +18,7 @@ defaults write com.apple.Finder AppleShowAllFiles true && killall Finder
 
 ### Install homebrew
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### Clone
@@ -31,6 +31,7 @@ git clone git@github.com:idanyman/dotfiles.git
 ### Install dependencies from Brewfile
 
 ```
+cd dotfiles
 brew bundle
 ```
 
@@ -40,13 +41,18 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+### Install kitty
+```
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+
 ### Create symlinks
 
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/vscode/settings.json /Users/ida.nyman/Library/Application\ Support/Code/User/settings.json
-ln -s ~/dotfiles/vscode/keybindings.json /Users/ida.nyman/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/dotfiles/.config/nvim/* ~/.config/nvim/
+ln -s ~/dotfiles/vscode/settings.json /Users/inyman/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/vscode/keybindings.json /Users/inyman/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/.config/nvim ~/.config/
 ln -s ~/dotfiles/.config/kitty ~/.config/
 ```
 
