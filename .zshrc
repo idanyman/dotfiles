@@ -28,7 +28,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias editrc="vim ~/.zshrc"
 alias sourcerc="source ~/.zshrc"
-#alias dc="docker-compose"
 ## Git
 alias gad="git add"
 alias gcm="git commit -m"
@@ -36,9 +35,9 @@ alias gco="git checkout"
 alias gs="git status -u"
 alias master="gco master && ggpull && git fetch -p"
 ## Docker
-#alias dc="docker-compose"
-#alias rma_containers="docker rm -f $(docker ps -a -q)"
-#alias rma_images="docker rmi -f $(docker images -q)"
+alias dc="docker-compose"
+alias rma_containers="docker rm -f $(docker ps -a -q)"
+alias rma_images="docker rmi -f $(docker images -q)"
 # Vim
 #alias vim="neovide --multigrid"
 
@@ -52,3 +51,16 @@ export NPM_TOKEN=""
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export BGP_SERVICE_ID="inyman-golden-path-tutorial"
+export BGP_SERVICE_ID_WITHOUT_DASHES="inymangoldenpathtutorial"
+export WORKSPACE="$HOME/dev"
+
+export PATH=$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin

@@ -12,7 +12,7 @@
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
   "eslint.packageManager": "yarn",
   "explorer.autoReveal": false,
   "extensions.ignoreRecommendations": true,
@@ -49,7 +49,9 @@
   "workbench.colorCustomizations": {
     "statusBar.background": "#415566",
     "statusBar.noFolderBackground": "#415566",
-    "statusBar.debuggingBackground": "#415566"
+    "statusBar.debuggingBackground": "#415566",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
   },
   "vim.statusBarColors.insert": "#007474",
   "vim.statusBarColors.normal": "#415566",
@@ -58,7 +60,7 @@
   "vim.statusBarColorControl": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -68,7 +70,7 @@
     "editor.formatOnSave": true
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.tabSize": 8,
   "emmet.includeLanguages": {
@@ -125,5 +127,9 @@
   ],
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.enabled": false
+  "cSpell.enabled": false,
+  "markdown-preview-enhanced.liveUpdate": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
