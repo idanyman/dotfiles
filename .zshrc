@@ -10,7 +10,7 @@ export PATH=/usr/local/bin:$PATH
 export ZSH_DISABLE_COMPFIX=true
 
 # Path to oh-my-zsh installation.
-export ZSH=/Users/inyman/.oh-my-zsh
+export ZSH=/Users/ida.nyman/.oh-my-zsh
 
 # Zsh Auto-suggestions plugin
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -35,9 +35,9 @@ alias gco="git checkout"
 alias gs="git status -u"
 alias master="gco master && ggpull && git fetch -p"
 ## Docker
-alias dc="docker-compose"
-alias rma_containers="docker rm -f $(docker ps -a -q)"
-alias rma_images="docker rmi -f $(docker images -q)"
+#alias dc="docker-compose"
+#alias rma_containers="docker rm -f $(docker ps -a -q)"
+#alias rma_images="docker rmi -f $(docker images -q)"
 # Vim
 #alias vim="neovide --multigrid"
 
@@ -59,8 +59,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export BGP_SERVICE_ID="inyman-golden-path-tutorial"
-export BGP_SERVICE_ID_WITHOUT_DASHES="inymangoldenpathtutorial"
 export WORKSPACE="$HOME/dev"
 
 export PATH=$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin

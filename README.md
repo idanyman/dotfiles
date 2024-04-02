@@ -38,7 +38,7 @@ brew bundle
 ### Install oh-my-zsh and set zsh as default shell
 ```
 chsh -s /bin/zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Install powerlevel10k zsh theme
@@ -56,8 +56,8 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/dotfiles/vscode/settings.json /Users/inyman/Library/Application\ Support/Code/User/settings.json
-ln -s ~/dotfiles/vscode/keybindings.json /Users/inyman/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/vscode/settings.json /Users/ida.nyman/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/vscode/keybindings.json /Users/ida.nyman/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/dotfiles/.config/nvim ~/.config/
 ln -s ~/dotfiles/.config/kitty ~/.config/
 ```
