@@ -13,7 +13,6 @@
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.wordWrap": "on",
-  "eslint.packageManager": "yarn",
   "explorer.autoReveal": false,
   "extensions.ignoreRecommendations": true,
   "files.trimTrailingWhitespace": true,
@@ -24,15 +23,9 @@
   "html.autoClosingTags": false,
   "prettier.semi": false,
   "prettier.singleQuote": true,
-  "ruby.intellisense": "rubyLocate",
-  "ruby.lint": {
-    "rubocop": true
-  },
-  "ruby.useLanguageServer": true,
   "terminal.external.osxExec": "kitty.app",
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "black",
   "vim.easymotionMarkerForegroundColorOneChar": "red",
@@ -75,10 +68,14 @@
   "editor.tabSize": 8,
   "emmet.includeLanguages": {
     "vue-html": "html",
-    "javascriptvue": "javascript"
+    "javascriptvue": "javascript",
+    "javascript": "javascriptreact"
   },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.triggerExpansionOnTab": true,
   "vsicons.dontShowNewVersionMessage": true,
-  "ruby.codeCompletion": "rcodetools",
   "settingsSync.keybindingsPerPlatform": false,
   "settingsSync.ignoredExtensions": [
 
@@ -88,9 +85,6 @@
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -99,35 +93,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "cSpell.userWords": [
-    "AWSX",
-    "closability",
-    "contexual",
-    "Instrumenter",
-    "loadbalancer",
-    "mappersmith",
-    "Middlewares",
-    "NOREPLY",
-    "openapi",
-    "Optin",
-    "osascript",
-    "osis",
-    "prefill",
-    "preload",
-    "railtie",
-    "redispute",
-    "sasl",
-    "sendout",
-    "sendouts",
-    "serializers",
-    "Untruncated"
-  ],
-  "cSpell.enableFiletypes": [
-    "ruby"
-  ],
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.enabled": false,
   "markdown-preview-enhanced.liveUpdate": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
