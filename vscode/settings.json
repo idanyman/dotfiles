@@ -32,7 +32,6 @@
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "window.title": "${rootName} | ${activeEditorMedium}",
-  "workbench.colorTheme": "Nord",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "vscode-icons",
@@ -98,5 +97,6 @@
   "markdown-preview-enhanced.liveUpdate": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.colorTheme": "Nord"
 }
