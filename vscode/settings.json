@@ -1,7 +1,7 @@
 {
   "[javascript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "editor.bracketPairColorization.enabled": true,
   "breadcrumbs.enabled": true,
@@ -51,11 +51,16 @@
   "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
   "vim.statusBarColorControl": true,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
   },
   "[javascriptvue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -88,15 +93,20 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.confirmDragAndDrop": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "markdown-preview-enhanced.liveUpdate": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Nord"
+  "workbench.colorTheme": "Nord",
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "chruby"
+  },
+  "[ruby]": {
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "explorer.compactFolders": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

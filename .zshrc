@@ -21,6 +21,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   thefuck
+  zsh-fzf-history-search
 )
 
 source $ZSH/oh-my-zsh.sh
