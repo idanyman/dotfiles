@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "linear": {
+      "command": "/Users/ida.nyman/.nodenv/versions/22.21.1/bin/npx",
+      "args": ["-y", "mcp-remote", "https://mcp.linear.app/mcp"],
+      "env": {
+        "PATH": "/Users/ida.nyman/.nodenv/versions/22.21.1/bin:/usr/bin:/bin"
+      }
+    },
+    "figma": {
+      "url": "https://mcp.figma.com/mcp",
+      "type": "http"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+cursor --install-extension arcticicestudio.nord-visual-studio-code && \
+cursor --install-extension biomejs.biome && \
+cursor --install-extension bradlc.vscode-tailwindcss && \
+cursor --install-extension dbaeumer.vscode-eslint && \
+cursor --install-extension dheovani.svg-viewer && \
+cursor --install-extension docker.docker && \
+cursor --install-extension eamodio.gitlens && \
+cursor --install-extension editorconfig.editorconfig && \
+cursor --install-extension eriklynd.json-tools && \
+cursor --install-extension esbenp.prettier-vscode && \
+cursor --install-extension evan-buss.font-switcher && \
+cursor --install-extension hashicorp.terraform && \
+cursor --install-extension janisdd.vscode-edit-csv && \
+cursor --install-extension koichisasada.vscode-rdbg && \
+cursor --install-extension ms-azuretools.vscode-docker && \
+cursor --install-extension ms-python.python && \
+cursor --install-extension rid9.datetime && \
+cursor --install-extension shopify.ruby-extensions-pack && \
+cursor --install-extension shopify.ruby-lsp && \
+cursor --install-extension sorbet.sorbet-vscode-extension && \
+cursor --install-extension steditor.line-endings && \
+cursor --install-extension suming.react-proptypes-generate && \
+cursor --install-extension tyriar.sort-lines && \
+cursor --install-extension vscode-icons-team.vscode-icons && \
+cursor --install-extension vscodevim.vim && \
+cursor --install-extension wmaurer.change-case

@@ -1,0 +1,114 @@
+{
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "breadcrumbs.enabled": true,
+    "dateTime.showDayOfMonth": true,
+    "dateTime.showDayOfWeek": true,
+    "dateTime.showMonth": true,
+    "editor.fontFamily": "FiraCode Nerd Font, Fira Code, Menlo, Monaco, Ubuntu Mono, Courier New, monospace",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.wordWrap": "on",
+    "extensions.ignoreRecommendations": true,
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.twig": "html",
+        "*.tmpl": "html"
+    },
+    "html.autoClosingTags": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "terminal.external.osxExec": "kitty.app",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 12,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "black",
+    "vim.easymotionMarkerForegroundColorOneChar": "red",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "window.title": "${rootName} | ${activeEditorMedium}",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tree.indent": 12,
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjfåäö;",
+    "vim.easymotionMarkerForegroundColorTwoChar": "white",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#415566",
+        "statusBar.noFolderBackground": "#415566",
+        "statusBar.debuggingBackground": "#415566",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "vim.statusBarColors.insert": "#007474",
+    "vim.statusBarColors.normal": "#415566",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(221, 77, 214, 0.5)",
+    "vim.statusBarColorControl": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome",
+        "editor.formatOnSave": true
+    },
+    "[javascriptvue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.tabSize": 8,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "javascriptvue": "javascript",
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "settingsSync.keybindingsPerPlatform": false,
+    "settingsSync.ignoredExtensions": [],
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "markdown-preview-enhanced.liveUpdate": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Nord",
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "rbenv"
+    },
+    "[ruby]": {},
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "explorer.compactFolders": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "chat.viewSessions.orientation": "stacked",
+    "dateTime.locale": "sv"
+}

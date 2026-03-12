@@ -61,8 +61,11 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ```
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/dotfiles/vscode/settings.json /Users/ida.nyman/Library/Application\ Support/Code/User/settings.json
-ln -s ~/dotfiles/vscode/keybindings.json /Users/ida.nyman/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+ln -s ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+ln -s ~/dotfiles/cursor/mcp.json ~/.cursor/mcp.json
 ln -s ~/dotfiles/.config/nvim ~/.config/
 ln -s ~/dotfiles/.config/kitty ~/.config/
 ```
@@ -76,4 +79,15 @@ ln -s ~/dotfiles/.config/kitty ~/.config/
 2. Install extensions through the shell
     ```
     ~/dotfiles/vscode/extensions.sh
+    ```
+
+### Install Cursor extensions
+
+1. Enable shell command
+    1. Launch Cursor
+    2. Open the Command Palette (⇧⌘P)
+    3. Enable `Shell Command: Install 'cursor' command in PATH`
+2. Install extensions through the shell
+    ```
+    ~/dotfiles/cursor/extensions.sh
     ```
