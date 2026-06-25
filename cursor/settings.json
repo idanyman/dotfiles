@@ -112,6 +112,6 @@
   "chat.viewSessions.orientation": "stacked",
   "dateTime.locale": "sv",
   "window.autoDetectColorScheme": false,
-  "vim.disableExtension": false,
+  "vim.disableExtension": true,
   "git.ignoreMissingGitWarning": true
 }
