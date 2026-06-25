@@ -1,0 +1,25 @@
+---
+description: Rules for creating pull requests
+globs:
+alwaysApply: true
+---
+
+# Pull Request Rules
+
+When creating pull requests, always follow these rules:
+
+## Title
+- Use conventional commit format: `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`, `test:`, etc.
+- Keep the title short and descriptive of the change.
+
+## Description
+- Be concise and to the point.
+- Use bullet points over long paragraphs.
+
+## Required Label
+- Every PR **must** include the label `Team: Live Interaction`.
+- Add it at creation time: `gh pr create --label "Team: Live Interaction"`.
+- **Do not** create a PR without this label. If it cannot be applied, ask the user for guidance before proceeding.
+
+## Draft
+- Always create PRs as drafts: `gh pr create --draft`.

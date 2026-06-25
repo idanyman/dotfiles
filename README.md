@@ -70,6 +70,20 @@ ln -s ~/dotfiles/.config/nvim ~/.config/
 ln -s ~/dotfiles/.config/kitty ~/.config/
 ```
 
+### Symlink local Cursor rules into projects
+
+These are personal, gitignored Cursor rules backed up here per project. Symlink them into each repo's `.cursor/rules/`:
+
+```
+for f in ~/dotfiles/cursor/rules/mm-js/*.local.mdc; do
+  ln -s "$f" ~/dev/mm-js/.cursor/rules/"$(basename "$f")"
+done
+
+for f in ~/dotfiles/cursor/rules/core-api/*.local.mdc; do
+  ln -s "$f" ~/dev/core-api/.cursor/rules/"$(basename "$f")"
+done
+```
+
 ### Install VS Code extensions
 
 1. Enable shell command

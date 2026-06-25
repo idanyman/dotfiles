@@ -1,0 +1,35 @@
+---
+description: Avoid IDE save-hook reflowing unrelated lines when editing markdown
+alwaysApply: true
+---
+
+# Markdown edits — bypass the IDE save hook
+
+When you edit a markdown file (`.md`/`.mdc`) in this workspace, the IDE's "format on save" hook reflows unrelated content (markdown table column padding, code-block quote style: `"` → `'`, line wrapping, etc.). This inflates the diff with reformatting noise that violates the repo's "minimal changes only" rule.
+
+The `StrReplace`, `Write`, and `EditNotebook` tools all go through the IDE save path and trigger the hook. A direct `python3` (or `node`) write does **not** trigger it.
+
+## Rules
+
+1. **For substantive markdown additions/inserts**, write the change via a small Python script that opens the file in `r`+`w` mode and does the byte-level replace. Bypass `StrReplace`/`Write` for `.md`/`.mdc` content edits.
+
+   Pattern:
+
+   ```python
+   from pathlib import Path
+   p = Path("absolute/path/to/file.md")
+   text = p.read_text()
+   sentinel = "<unique snippet from existing file>"
+   assert text.count(sentinel) == 1, "sentinel must be unique"
+   p.write_text(text.replace(sentinel, sentinel + "\n\n<new content>", 1))
+   ```
+
+   Run with `python3 /tmp/<script>.py`, then verify with `git diff --stat <file>` — it should show **only the lines you intended to add**, with **0 deletions** for pure inserts.
+
+2. **Trivial single-line edits** (typo fix, one-word change) on markdown can still use `StrReplace` — the formatter noise on a one-line touch is usually acceptable. But for any insert > ~5 lines, prefer the Python path.
+
+3. **After any markdown edit (regardless of tool)**, always run `git diff --stat <file>` and check the insertions/deletions ratio looks right. If you see an unexpectedly large `-` count for what should be an additive change, the save hook reformatted the file — `git checkout --` it and redo via Python.
+
+4. **TypeScript / JavaScript / JSON edits are unaffected** — the project uses Biome, which is consistent with the repo style; reformatting via the save hook on those files is a no-op or a desirable normalization. This rule applies only to markdown.
+
+5. **Do not disable the save hook globally.** Other contributors and the user benefit from it for normal editing — just route agent edits around it.

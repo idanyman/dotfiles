@@ -1,0 +1,19 @@
+---
+description: Do not auto-commit when solving issues or tickets
+alwaysApply: true
+---
+
+# No Auto-Commit on Issues/Tickets
+
+When solving an issue or a Linear ticket, **do not** create a git commit automatically.
+Let the user review the changes first and only commit when explicitly asked.
+
+# No Amend-and-Push Unless Instructed
+
+**Never** amend a commit and force-push unless the user explicitly asks you to amend.
+Always create a new commit instead. Only amend when the user says "amend".
+
+# No Ticket IDs in Commits or PR Titles
+
+**Do not** append Linear ticket numbers (e.g. `[PINT-123]`) to commit messages or PR titles.
+Reference tickets only in the PR description body.

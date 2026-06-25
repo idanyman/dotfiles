@@ -1,0 +1,32 @@
+---
+description: Code style conventions for new/edited code
+alwaysApply: true
+---
+
+# Always Use Curly Braces for Control Flow
+
+**Never** write one-liner `if`, `else`, `for`, or `while` statements.
+Always use curly braces, even for a single statement body.
+
+Applies to `if`/`else if`/`else`, `for`, `for...of`, `for...in`, `while`, and `do...while`.
+
+Good:
+
+```ts
+if (!enabled) {
+  return;
+}
+```
+
+Bad:
+
+```ts
+if (!enabled) return;
+```
+
+```ts
+if (!enabled)
+  return;
+```
+
+Apply this to all new and edited code in this repo.

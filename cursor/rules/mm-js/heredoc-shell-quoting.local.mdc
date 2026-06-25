@@ -1,0 +1,42 @@
+---
+description: Don't escape backticks or quotes inside single-quoted shell heredocs (PR bodies, commit messages, etc.)
+alwaysApply: true
+---
+
+# Single-quoted heredocs are already literal — do not escape
+
+When writing PR bodies, commit messages, or any other multi-line payload via a shell heredoc with **single quotes** around the delimiter, **no escaping is needed or wanted**. The single quotes already prevent every form of shell expansion.
+
+```bash
+# Correct — single-quoted delimiter, content is verbatim
+gh pr edit 123 --body "$(cat <<'EOF'
+The `votingFetch` call returns a `Response` whose body is `{"key": "value"}`.
+EOF
+)"
+```
+
+```bash
+# WRONG — backslashes end up *literally* in the output (`\` and `\"` survive)
+gh pr edit 123 --body "$(cat <<'EOF'
+The \`votingFetch\` call returns a \`Response\` whose body is \`{\"key\": \"value\"}\`.
+EOF
+)"
+```
+
+## Why this is easy to get wrong
+
+Bash heredocs come in two shapes:
+
+| Form | Expansion | Escape? |
+|---|---|---|
+| `<<EOF` (unquoted delimiter) | `$VAR`, `$(cmd)`, `` `cmd` `` all expanded | Yes — escape `\$`, `` \` `` to keep them literal |
+| `<<'EOF'` (single-quoted delimiter) | None at all — every byte is literal | **No — escapes pass through verbatim** |
+
+The repo's `gh pr create` / `gh pr edit` template uses `<<'EOF'`, but the muscle memory for shell-escaping is so strong that agents (and humans) keep adding `\``, `\"`, `\$` defensively. Inside `<<'EOF'`, those backslashes become **part of the body**, and Markdown then renders them literally — visible as `\`` next to the inline code, breaking the whole point of the quoting.
+
+## Rules
+
+1. **If the heredoc delimiter is single-quoted (`<<'EOF'`)**: never escape `` ` ``, `"`, `'`, `$`, or `\` inside the body. Write Markdown as you would in a plain `.md` file.
+2. **If the heredoc delimiter is unquoted (`<<EOF`)**: only `\$` and `` \` `` need escaping (to suppress expansion). Strongly prefer the single-quoted form for content like PR/issue bodies — it's safer and removes the question entirely.
+3. **After publishing a PR/issue/comment via `gh`, always sanity-check the result** with `gh pr view <num> --json body --jq .body | grep -E '\\\\\\`|\\\\\\"'` (or eyeball the rendered page). If you see literal backslashes next to `` ` `` or `"`, you escaped inside a single-quoted heredoc — re-edit with the escapes removed.
+4. **The `gh` command itself does no Markdown processing** — whatever the heredoc emits is what GitHub stores. The rendering issue is always introduced *before* `gh` sees the body, never after.

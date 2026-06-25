@@ -1,0 +1,21 @@
+---
+description: Rules for creating git worktrees
+globs:
+alwaysApply: true
+---
+
+# Git Worktree Rules
+
+## Do not create worktrees unless asked
+
+**Never** create a git worktree (e.g. `git worktree add`) on your own. If new work needs a separate branch, create the branch in the current working directory (`git switch -c …` off the appropriate base). Only create a worktree when the user explicitly asks for one (e.g. "make a worktree", "in a new worktree", "use a worktree").
+
+## When the user does ask for a worktree
+
+Always run the worktree setup script **from within the new worktree directory** as a follow-up step:
+
+```bash
+bash .cursor/worktree-setup.sh
+```
+
+This script copies local agent rules, `.env` files, and installs dependencies. Do not skip it.

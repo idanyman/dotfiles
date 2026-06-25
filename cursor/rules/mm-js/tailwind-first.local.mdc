@@ -1,0 +1,42 @@
+---
+description: Always start new UI code with Tailwind, never Fela
+alwaysApply: true
+---
+
+# Always Use Tailwind for New UI Code
+
+All new UI code in this repo must use Tailwind CSS via the `/tw` Ragnar imports. Never introduce or extend Fela / styled-system styling.
+
+## When editing an existing Fela-styled file
+
+If a file uses Fela `extend={...}` or styled-system props (`m="space2"`, `bg="primary"`, etc.) and you're touching it for any reason, opportunistically migrate the elements you touch to Tailwind — even when the change isn't styling-related. Keep the diff minimal: migrate the touched element, not untouched siblings.
+
+When adding new styling, never extend the Fela code; use Tailwind from the start.
+
+If the surrounding component is genuinely too complex to migrate cleanly in scope, ask the user before either keeping the existing Fela or adding new.
+
+That's how Fela usage shrinks rather than spreads.
+
+## Mechanics
+
+- Import Ragnar components from their `/tw` subpath (e.g. `@mentimeter/ragnar-ui/box/tw`, `@mentimeter/ragnar-ui/text/tw`).
+- Use `clsx` from `@mentimeter/ragnar-tailwind-config` when composing 4+ classes or any conditional className.
+- Before guessing token mappings, load the tailwind-migration skill (`.claude/skills/tailwind-migration/SKILL.md`) — this repo has custom design tokens that diverge from stock Tailwind.
+
+## Examples
+
+Bad — matching nearby Fela in the same file:
+
+```tsx
+import { Box } from '@mentimeter/ragnar-ui/box';
+
+<Box extend={({ theme }) => ({ marginRight: `${theme.kosmosSpacing.space2}px` })} />
+```
+
+Good — Tailwind via `/tw` import:
+
+```tsx
+import { Box } from '@mentimeter/ragnar-ui/box/tw';
+
+<Box className="mr-2" />
+```
