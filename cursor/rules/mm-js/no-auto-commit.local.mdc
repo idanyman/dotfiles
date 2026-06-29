@@ -17,3 +17,8 @@ Always create a new commit instead. Only amend when the user says "amend".
 
 **Do not** append Linear ticket numbers (e.g. `[PINT-123]`) to commit messages or PR titles.
 Reference tickets only in the PR description body.
+
+# No Co-Author Trailers in Commits
+
+**Do not** add `Co-authored-by: Cursor ...` (or any other AI/agent co-author
+trailer) to commit messages. Keep commit messages free of co-author attribution.
