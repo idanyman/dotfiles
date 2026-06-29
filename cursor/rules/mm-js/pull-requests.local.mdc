@@ -11,6 +11,7 @@ When creating pull requests, always follow these rules:
 ## Title
 - Use conventional commit format: `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`, `test:`, etc.
 - Keep the title short and descriptive of the change.
+- **Do not** include Linear ticket numbers (e.g. `LIT-706`, `[PINT-123]`) in the title. Reference the ticket only in the PR description body.
 
 ## Description
 - Be concise and to the point.
