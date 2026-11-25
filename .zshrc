@@ -30,6 +30,8 @@ source $ZSH/oh-my-zsh.sh
 alias editrc="vim ~/.zshrc"
 alias sourcerc="source ~/.zshrc"
 # alias 1pass="eval $(op signin --account mentimeter.1password.com)"
+## Dock
+alias cleardock="killall Dock"
 ## Git
 alias gad="git add"
 alias gcm="git commit -m"
@@ -62,11 +64,11 @@ alias lrt="linkup route remote tracking"
 #alias ll="linkup local --"
 #alias lr="linkup remote --"
 # mm-js
-alias votingdev="yarn && yarn workspace voting dev"
-alias editordev="yarn && yarn workspace editor dev"
-alias dashboarddev="yarn && yarn workspace dashboard dev"
-alias contentdev="yarn && yarn workspace content dev"
-alias quizdev="yarn && yarn workspace quiz dev"
+alias votingdev="pnpm install && pnpm --filter voting dev"
+alias editordev="pnpm install && pnpm --filter editor dev"
+alias dashboarddev="pnpm install && pnpm --filter dashboard dev"
+alias contentdev="pnpm install && pnpm --filter content dev"
+alias quizdev="pnpm install && pnpm --filter quiz dev"
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -106,7 +108,7 @@ eval "$(nodenv init -)"
 export LINKUP_CF_API_TOKEN=pV6_XPS_m60bUExRrh7R6Nh2QrA4yHtgK8QWM6SW
 export LINKUP_CERT_STORAGE_REDIS_URL=redis://default:H7ZLRRGiF8GCmLIHEj3NXhq9cfYT0qpm@redis-13271.c77.eu-west-1-1.ec2.cloud.redislabs.com:13271
 
-eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519
 
 # bun completions
 [ -s "/Users/ida.nyman/.bun/_bun" ] && source "/Users/ida.nyman/.bun/_bun"
@@ -116,7 +118,12 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export LINKUP_CLOUDFLARE_ACCOUNT_ID=a48331bc8d43f256514f70a8a93606bb
-export PATH="/Applications/Postgres.app/Contents/Versions/16/bin:$PATH"
+
+# libpq (keg-only) — provides pg_dump/psql at runtime and headers for building sequel_pg
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib${LDFLAGS:+ $LDFLAGS}"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include${CPPFLAGS:+ $CPPFLAGS}"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 
 # start Mentimeter's osx-setup
 eval "$(rbenv init -)"

@@ -16,10 +16,5 @@ When creating pull requests, always follow these rules:
 - Be concise and to the point.
 - Use bullet points over long paragraphs.
 
-## Required Label
-- Every PR **must** include the label `Team: Live Interaction`.
-- Add it at creation time: `gh pr create --label "Team: Live Interaction"`.
-- **Do not** create a PR without this label. If it cannot be applied, ask the user for guidance before proceeding.
-
 ## Draft
 - Always create PRs as drafts: `gh pr create --draft`.
